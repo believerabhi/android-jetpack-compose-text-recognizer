@@ -10,6 +10,7 @@ import androidx.compose.material.Text
 import androidx.compose.runtime.Composable
 import androidx.compose.ui.Modifier
 import androidx.compose.ui.tooling.preview.Preview
+import com.example.textrecognizer.ui.theme.MainScreen
 import com.example.textrecognizer.ui.theme.TextRecognizerTheme
 
 class MainActivity : ComponentActivity() {
@@ -22,7 +23,8 @@ class MainActivity : ComponentActivity() {
                     modifier = Modifier.fillMaxSize(),
                     color = MaterialTheme.colors.background
                 ) {
-                    Greeting("Learn Compose everyday")
+                   // Greeting("Learn Compose")
+                   MainScreen()
                 }
             }
         }
