@@ -2,6 +2,7 @@ package com.example.textrecognizer.ui.theme
 
 import androidx.compose.runtime.Composable
 import androidx.compose.ui.tooling.preview.Preview
+import com.example.textrecognizer.ui.camera.CameraScreen
 import com.example.textrecognizer.ui.no_permission.NoPermissionScreen
 import com.google.accompanist.permissions.ExperimentalPermissionsApi
 import com.google.accompanist.permissions.PermissionState
@@ -24,7 +25,7 @@ private fun MainContent(
     hasPermission: Boolean,
     onRequestPermission: ()-> Unit) {
      if(hasPermission) {
-     //CameraScreen()
+       CameraScreen()
      } else {
          NoPermissionScreen(onRequestPermission)
      }
