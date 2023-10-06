@@ -26,8 +26,8 @@ private fun MainContent(
     hasPermission: Boolean,
     onRequestPermission: ()-> Unit) {
      if(hasPermission) {
-       //CameraScreen()
-         MLKitTextRecognition()
+       CameraScreen()
+       //  MLKitTextRecognition()
      } else {
          NoPermissionScreen(onRequestPermission)
      }
